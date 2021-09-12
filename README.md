@@ -7,4 +7,6 @@ Moderation - Ban, Kick, Purge and DM.
 Fun - Cat, Dog, Wiki, Skin, Avatar, Joke, Ping, Info, Uptime. with /slash works!
 
 #How to setup
+
+
 Its pretty easy go to config.py in Bot folder and fill the details including your bot token etc.

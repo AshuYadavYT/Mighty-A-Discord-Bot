@@ -3,7 +3,11 @@ A discord bot made in Python. Moderation, Fun with SLASH Commands!
 It was really fun while i was creating it. there is not too much commands anways i hope it works fine.
 
 Commands Name:
+
+
 Moderation - Ban, Kick, Purge and DM.
+
+
 Fun - Cat, Dog, Wiki, Skin, Avatar, Joke, Ping, Info, Uptime. with /slash works!
 
 #How to setup

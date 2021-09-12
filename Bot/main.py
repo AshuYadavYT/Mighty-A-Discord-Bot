@@ -31,8 +31,8 @@ async def on_ready():
 
 @client.event
 async def on_member_join(member):
-  channel = client.get_channel(804653115918909443)
-  await channel.send(f"{member.mention} Aapka Yaha Dil Se Sawagat hai <a:HeartGIF:876002290497093632> ")
+  channel = client.get_channel(config.join_channel)
+  await channel.send(member.mention + config.join_message)
 
 @client.event
 async def on_command_error(ctx, error):

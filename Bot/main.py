@@ -244,7 +244,7 @@ async def dm(ctx, member : discord.Member,* , message):
     await ctx.reply(f"Their Dm's is off i can't send message.")
 
 @client.command()
-@has_role(804926508677333053)
+@has_role(config.admin_role)
 async def change_status(ctx,* , name):
   await client.change_presence(activity=discord.Activity(type=discord.ActivityType.watching, name=f"{name}"))
   await ctx.send(f"I changed my presence to `{name}`")
@@ -252,7 +252,7 @@ async def change_status(ctx,* , name):
 @change_status.error
 async def error_status(ctx, error):
   if isinstance(error, MissingRole):
-    await ctx.reply(f"{ctx.message.author.name} Only my Owner can use this command.")
+    await ctx.reply(f"{ctx.message.author.name} Only Admins can use this!.")
 
 #======================================================================================================================
 #Moderation Commands Starts from here

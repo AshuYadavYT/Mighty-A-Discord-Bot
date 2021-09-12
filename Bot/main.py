@@ -2,7 +2,6 @@ import discord
 from discord.ext import commands, tasks
 from datetime import datetime
 import os
-from keep_alive import keep_alive
 from discord_slash import SlashCommand
 from discord.ext.commands.core import has_permissions, has_role
 import random
@@ -33,6 +32,7 @@ async def on_ready():
 async def on_member_join(member):
   channel = client.get_channel(config.join_channel)
   await channel.send(member.mention + config.join_message)
+  await member.send(f"{member.mention} Thanks for joining {member.guild_name}")
 
 @client.event
 async def on_command_error(ctx, error):

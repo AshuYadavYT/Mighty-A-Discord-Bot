@@ -1,4 +1,6 @@
-prefix = "bot prefix here" #replace your bot token here.
+token = "replace this with your bot's token"
+
+prefix = "bot prefix here" #bot's prefix
 
 colour = 0xf1c40f #color of embeds for bot.
 
